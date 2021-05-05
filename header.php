@@ -1,9 +1,3 @@
-<?php 
-
- include 'db.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,30 +16,10 @@
     <title>Php dischi</title>
   </head>
   <body>
-      <div id="app">
-      <!-- header (logo img) -->
+    <div id="app">
       <header>
         <img src="download.png" alt="">
         <select class="" name="genres" v-model="genreSelect">
           <option value="">All genres</option>
         </select>
       </header>
-
-      <div class="wrapper">
-      <?php foreach($dischi as $disc): ?>
-        
-        <div class="card">
-            <img src="<?php echo $disc['poster'] ?>" alt="">
-            <h3 class="title"><?php echo $disc['title'] ?></h3>
-            <span class="author"><?php echo $disc['author'] ?></span>
-            <span class="year"><?php echo $disc['year'] ?></span>
-        </div>
-      <?php endforeach; ?>
-
-      </div>
-    </div>
-
-    <!-- javascript -->
-    <script src="js/script.js" charset="utf-8"></script>
-  </body>
-</html>
