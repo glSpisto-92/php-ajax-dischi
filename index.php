@@ -28,12 +28,10 @@
       <img src="download.png" alt="">
       <select class="" name="genres" v-model="genreSelect">
         <option value="">All genres</option>
-        <option :value="genre" v-for="genre in genres">{{genre}}</option>
       </select>
     </header>
 
     <div class="wrapper">
-     <!-- card album (author, genre, date...)    condizione che torna gli album per generi o tutti gli albums -->
      <?php foreach($dischi as $disc): ?>
       
       <div class="card">
